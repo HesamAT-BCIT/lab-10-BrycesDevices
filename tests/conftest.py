@@ -27,9 +27,9 @@ def mock_firestore(monkeypatch):
     # Default profile response; customize per test when needed.
     mock_snapshot.exists = True
     mock_snapshot.to_dict.return_value = {
-        "first_name": "Test",
-        "last_name": "User",
-        "student_id": "12345678",
+        "first_name": "Bryce",
+        "last_name": "Reid",
+        "student_id": "A12345678",
     }
 
     fake_firebase_module = types.ModuleType("firebase")
